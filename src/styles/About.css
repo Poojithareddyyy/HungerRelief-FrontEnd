@@ -1,0 +1,258 @@
+.about-page {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    background-color: #fafafa;
+  }
+  
+  /* Header/Navbar */
+  .about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 60px;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E63946;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .nav-links .nav-item,
+  .donate-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .donate-btn {
+    background-color: #E63946;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .donate-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Banner */
+  .about-banner {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-banner h1 {
+    font-size: 3rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+  }
+  
+  /* Who We Are Section */
+  .who-we-are {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 5%;
+    gap: 2rem;
+  }
+  
+  .who-we-are .text {
+    flex: 1;
+  }
+  
+  .who-we-are h2 {
+    font-size: 2rem;
+    color: #E63946;
+  }
+  
+  .who-we-are p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .who-we-are .image {
+    flex: 1;
+  }
+  
+  .who-we-are .image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Info Cards (Vision, Mission, etc.) */
+  .info-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    padding: 3rem 5%;
+    flex-wrap: wrap;
+    background-color: #fff;
+  }
+  
+  .card {
+    background-color: #f8f8f8;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    color: #E63946;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Carousel */
+  .carousel-section {
+    padding: 3rem 5%;
+    background: #fefefe;
+    text-align: center;
+  }
+  
+  .carousel-section h2 {
+    font-size: 2rem;
+    color: #E63946;
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-container {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-slide h3 {
+    color: #E63946;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  /* Sidebar Toggle Button */
+.menu-toggle {
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    font-size: 24px;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    z-index: 1001;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sidebar Menu */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-top: 0px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .sidebar ul li button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    transition: background-color 0.2s ease;
+  }
+  
+  .sidebar ul li button:hover {
+    background-color: #e2e2e2;
+  }
+  

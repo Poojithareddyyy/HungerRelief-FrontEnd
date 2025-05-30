@@ -1,0 +1,176 @@
+.contact-page {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .contact-heading {
+    background: url('../assets/contact-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .help-section,
+  .questions-section,
+  .feedback-section,
+  .details-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .help-section h2,
+  .questions-section h2,
+  .feedback-section h2,
+  .details-section h2 {
+    margin-bottom: 20px;
+    color: #2088b1;
+  }
+  
+  .help-section p {
+    font-size: 1.1rem;
+  }
+  
+  .contact-form,
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .feedback-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+  }
+  
+  .contact-form button,
+  .feedback-form button {
+    background-color: #31a7d6;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover,
+  .feedback-form button:hover {
+    background-color: #59aacf;
+  }
+  
+  .details-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+  
+  /* Reuse sidebar and toggle from dashboard */
+  .menu-toggle {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    font-size: 24px;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    z-index: 1001;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sidebar Menu */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-top: 100px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .sidebar ul li button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    transition: background-color 0.2s ease;
+  }
+  
+  .sidebar ul li button:hover {
+    background-color: #e2e2e2;
+  }
+  
+  .dashboard-header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  .logo{
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+  
+  .logo-text {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #E63946;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .nav-links a.active,
+  .nav-links a:hover {
+    color: #E63946;
+  }
+  
+  .donate-btn {
+    background-color: #E63946;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  

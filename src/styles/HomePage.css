@@ -1,0 +1,123 @@
+/* HomePage.css */
+
+/* Background Image Setup */
+.homepage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    font-family: "Arial", sans-serif;
+    position: relative;
+  }
+  
+  /* Title and Tagline - Moved Slightly Up */
+  .header {
+    margin-bottom: 50px; /* Increased margin to push content up */
+    position: absolute;
+    top: 5%;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .tagline {
+    
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Authentication Box */
+  .auth-box {
+    background: rgba(196, 219, 196, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 70%;
+    left: 77%; /* shifted more to the right */
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
+  .auth-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .auth-box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  
+ /* Signup Button - Coral/Orange Gradient */
+.signup {
+  background: linear-gradient(45deg, #ff7043, #ff3d00); /* Orange to deep coral */
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.signup:hover {
+  background: linear-gradient(45deg, #ff5722, #e64a19);
+  box-shadow: 0 8px 20px rgba(255, 61, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+/* Login Button - Teal/Aqua Gradient */
+.login {
+  background: linear-gradient(45deg, #ff5722, #ff5722); /* Teal to aqua */
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login:hover {
+  background: linear-gradient(45deg, #ff5722, #ff5722);
+  box-shadow: 0 8px 20px rgba(0, 206, 201, 0.4);
+  transform: translateY(-3px);
+}
